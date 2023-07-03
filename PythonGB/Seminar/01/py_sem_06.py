@@ -10,8 +10,6 @@ b = 100
 c = 400
 i = 0
 data = ["Обычный", 'Високосный']
-# for item in data:
-#     print(item)
 
 year = int(input('Введите год в формате yyyy: '))
 
