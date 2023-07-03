@@ -8,10 +8,15 @@
 a = 4
 b = 100
 c = 400
+i = 0
+data = ["Обычный", 'Високосный']
+# for item in data:
+#     print(item)
 
 year = int(input('Введите год в формате yyyy: '))
 
 if year % a != 0 or year % b == 0 and year % c != 0:
-    print("Обычный")
+    i = 0
 else:
-    print("Високосный")
+    i = 1
+print(data[i])
