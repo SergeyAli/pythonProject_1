@@ -7,7 +7,7 @@
 Зимой и летом одним цветом? ['ель', 'ёлка', 'сосна']
 '''
 
-def game_02(riddle: str, answers: list, attempt: int):
+def game_02(riddle: str, answers: list, attempt=3) -> int:
     print(f'{riddle}\n')
     for i in range(1, attempt + 1):
         var = input(f'Попытка {i} Ведите ответ: ')
