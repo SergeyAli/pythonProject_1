@@ -11,8 +11,7 @@
 ✔ Имя файла и его размер должны быть в рамках переданного диапазона
 '''
 
-
-
+_all__ = ['create_file']
 import random
 from random import sample, randint
 
@@ -24,7 +23,7 @@ COUNT_FILE = 42
 STR_CHAR = 'qwrtpsdfghjklzxcvbnmeyuioa'
 
 
-def create_file(exp: str, min_len_name=MIN_LEN_NAME, max_len_name=MAX_LEN_NAME, min_size=MIN_SIZE, max_size=MAX_SIZE,
+def create_file_(exp: str, min_len_name=MIN_LEN_NAME, max_len_name=MAX_LEN_NAME, min_size=MIN_SIZE, max_size=MAX_SIZE,
                 count_file=COUNT_FILE):
     for _ in range(0, count_file):
         name_file = "".join(random.choices(STR_CHAR, k=random.randint(min_len_name, max_len_name))) + '.' + exp
@@ -34,5 +33,4 @@ def create_file(exp: str, min_len_name=MIN_LEN_NAME, max_len_name=MAX_LEN_NAME, 
 
 
 if __name__ == '__main__':
-    create_file('txt', count_file=3)
-
+    create_file_('txt', count_file=3)

@@ -8,7 +8,6 @@
 ✔ При достижении конца более короткого файла, возвращайтесь в его начало.
 '''
 
-
 def create_file(file_nums: str, file_psew: str, file_res: str):
     with (
         open(file_nums, 'r', encoding='utf-8') as f_nums,
@@ -37,3 +36,4 @@ def create_file(file_nums: str, file_psew: str, file_res: str):
 
 if __name__ == '__main__':
     create_file('nums.txt', 'psew.txt', 'result.txt')
+
