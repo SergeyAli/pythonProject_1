@@ -55,7 +55,6 @@ def repeat_func(repeats):
 
     return decorator
 
-
 @repeat_func(3)
 @validate_values
 @save_params
@@ -69,3 +68,4 @@ def guess_number(number):
 
 if __name__ == '__main__':
     guess_number(5)
+    # print(help(guess_number))
