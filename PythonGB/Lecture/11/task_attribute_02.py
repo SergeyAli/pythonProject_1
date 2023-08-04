@@ -25,5 +25,5 @@ class Vector:
         return object.__getattribute__(self, item)
 
 a = Vector(2, 4)
-print(a.z) # AttributeError: У нас вектор на плоскости, а не в пространстве
+# print(a.z) # AttributeError: У нас вектор на плоскости, а не в пространстве
 print(f'{a = }')
