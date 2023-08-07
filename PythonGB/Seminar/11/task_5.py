@@ -8,6 +8,7 @@
 '''
 
 class Rectangle:
+    """Документация архива данных """
 
     def __init__(self, height: int, width=None):
         self.height = height
@@ -47,3 +48,4 @@ sub_reg = spam - eggs
 
 print(f'{sub_reg.width = }, {sub_reg.height =}')
 print(f'{add_reg.width = }, {add_reg.height =}')
+print({help(Rectangle)})

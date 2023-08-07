@@ -6,6 +6,7 @@
 '''
 
 class Arhiv:
+    """Документация архива данных """
     _instance = None
 
     def __new__(cls, *args, **kwargs):
@@ -29,3 +30,4 @@ spam3 = Arhiv("дневной дозор", 1555)
 print(f'{spam.text =}, {spam.number =}')
 
 print(f'{spam.list_arhiv = }')
+print({help(Arhiv)})

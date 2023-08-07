@@ -8,7 +8,7 @@
 import datetime
 
 class MyString(str):
-
+    """Документация архива данных """
     def __new__(cls, current_str, autor):
         instance = super().__new__(cls, current_str)
         instance.autor = autor
@@ -22,3 +22,4 @@ class MyString(str):
 spam = MyString('чудный день', 'сурок')
 
 print(f'{spam.autor = }, {spam.time_create}')
+print({help(MyString)})

@@ -5,6 +5,7 @@
 
 class Arhiv:
     """Документация архива данных """
+
     _instance = None
 
     def __new__(cls, *args, **kwargs):
